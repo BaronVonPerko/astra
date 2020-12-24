@@ -167,9 +167,6 @@ function astra_builder_button_css( builder_type = 'header', button_count ) {
 		// Advanced Visibility CSS Generation.
 		astra_builder_visibility_css( section, selector, 'block' );
 
-		// Box Shadow CSS Generation.
-		astra_builder_box_shadow_css( section, selector + ' .ast-custom-button' );
-
 		(function (index) {					
 			wp.customize( 'astra-settings[' + builder_type + '-button'+ index + '-border-size]', function( setting ) {
 				setting.bind( function( border ) {
